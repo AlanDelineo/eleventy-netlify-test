@@ -14,3 +14,7 @@ This has spun up in no time, edits are super quick and if this works as expected
 I'm going to try something stupid next like setting up a OTT carousel and see how that effects the page speed/lighthouse score.
 
 Woo!
+
+So this was orignally added via the CMS, but if I add more content here and commit from my local machine this is going to update!
+
+I'm fairly sure this is witchcraft.
