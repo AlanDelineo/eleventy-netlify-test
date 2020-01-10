@@ -7,3 +7,6 @@ if (window.netlifyIdentity) {
     }
   });
 }
+
+
+new Glide('.glide').mount();
