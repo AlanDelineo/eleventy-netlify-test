@@ -25,11 +25,6 @@ body {
     background-color: var(--white);
 }
 
-main {
-    max-width: 37.5em;
-    margin: 0 auto;
-}
-
 p,
 pre,
 code {
@@ -54,6 +49,9 @@ footer {
 main {
     padding: 1em;
     padding-bottom: 2em;
+    width: 100%;
+    max-width: 37.5em;
+    margin: 0 auto;
 }
 
 main :first-child,
@@ -195,7 +193,7 @@ button {
     display: inline-block;
     padding: 8px 15px;
     background: #ffffff;
-    color: var(--blue);
+    color: var(--blue) !important;
     text-decoration: none !important;
     width: auto;
 }
