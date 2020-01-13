@@ -3,24 +3,7 @@ layout: layouts/base.njk
 section: home
 ---
 
-<!-- <div class="glide">
-  <div data-glide-el="track" class="glide__track">
-    <ul class="glide__slides">
-      <li class="glide__slide"><img src="static/img/delineo-_web_banners_deliver.webp"></li>
-      <li class="glide__slide"><img src="static/img/delineo-_web_banners_define.webp"></li>
-      <li class="glide__slide"><img src="static/img/delineo-_web_banners_innovate.webp"></li>
-    </ul>
-  </div>
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">left</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">right</button>
-  </div>
-</div> -->
-
 {% set slidelist = collections.slides %}
 {% include "components/slideslist.njk" %}
 
 {{ layoutContent | safe }}
-
-{% set postslist = collections.posts %}
-{% include "components/postslist.njk" %}

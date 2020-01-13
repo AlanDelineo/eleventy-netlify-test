@@ -1,5 +1,6 @@
 ---
 title: Slide 2
 link: /blog/
+body: Different body copy here...
 ---
-Different body copy here...
+

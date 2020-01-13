@@ -1,13 +1,18 @@
 <div class="glide">
 	<div data-glide-el="track" class="glide__track">
 		<ul class="glide__slides">
-			<li class="glide__slide"><img src="static/img/delineo-_web_banners_deliver.webp"></li>
-			{% for slide in slidelist | reverse %}
+			{% for slide in slidelist %}
 			<li class="glide__slide">
 				{% if slide.data.title %}
-					{{ slide.data.title }}
+					<h2>{{ slide.data.title }}</h2>
 				{% else %}
 					Default slide title
+				{% endif %}
+				{% if slide.data.body %}
+					<p>{{ slide.data.body }}</p>
+				{% endif %}
+				{% if slide.data.link %}
+					<a href="{{ slide.data.link }}" class="btn">Read more</a>
 				{% endif %}
 				<img src="static/img/delineo-_web_banners_deliver.webp">
 			</li>
@@ -16,7 +21,7 @@
 	</div>
 
 	<div class="glide__arrows" data-glide-el="controls">
-		<button class="glide__arrow glide__arrow--left" data-glide-dir="<">left</button>
-		<button class="glide__arrow glide__arrow--right" data-glide-dir=">">right</button>
+		<button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#60;</button>
+		<button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#62;</button>
 	</div>
 </div>
