@@ -51,6 +51,13 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // only content in the `slides/` directory
+  eleventyConfig.addCollection("slides", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.inputPath.match(/^\.\/slides\//) !== null;
+    });
+  });
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
