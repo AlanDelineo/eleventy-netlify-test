@@ -37,9 +37,10 @@ collections:
   - name: "slides"
     label: "Slide"
     folder: "slides"
-    create: false # Change to true to allow editors to create new pages
+    create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: Image, name: image, widget: "image" }
