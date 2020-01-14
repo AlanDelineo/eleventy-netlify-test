@@ -7,3 +7,8 @@ section: home
 {% include "components/slideslist.njk" %}
 
 {{ layoutContent | safe }}
+
+{% set js %}
+	{% include "assets/js/glide.min.js" %}
+{% endset %}
+<script>{{ js | jsmin | safe }}</script>

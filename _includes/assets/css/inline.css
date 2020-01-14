@@ -198,6 +198,42 @@ button {
     width: auto;
 }
 
+/* Col classes */
+.col2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width:480px) {
+    .col2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* People grid */
+
+.person {
+    position: relative;
+}
+
+.person h2 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    color: var(--white);
+    text-shadow: 1px 1px var(--blue);
+    margin: 0;
+}
+
+.person img {
+    width: 100%;
+    display: block;
+}
+
+
 /* GLIDE core css*/
 .glide {
     position: relative;

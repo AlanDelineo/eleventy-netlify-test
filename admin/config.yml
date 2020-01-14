@@ -44,3 +44,12 @@ collections:
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: Image, name: image, widget: "image" }
+  # Our people
+  - name: "people"
+    label: "People"
+    folder: "people"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: Image, name: image, widget: "image" }

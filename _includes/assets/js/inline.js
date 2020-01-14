@@ -13,6 +13,5 @@ var element = document.getElementById("glide");
 
 //If it isn't "undefined" and it isn't "null", then it exists.
 if(typeof(element) != 'undefined' && element != null){
-    console.log('yup');
 	new Glide('.glide').mount()
 }

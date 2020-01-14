@@ -19,7 +19,6 @@
 		{% include "components/footer.njk" %}
 
 		{% set js %}
-		    {% include "assets/js/glide.min.js" %}
 		    {% include "assets/js/inline.js" %}
 	    {% endset %}
 		<script>{{ js | jsmin | safe }}</script>
